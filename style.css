@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 100%;
+    min-height: auto;
+    border: solid blue 2px;
+
+}
+.titleCONT{
+text-align: center;
+background-color: #1c1c1c;
+color: white;
+}
+
+.erasCONT{
+width: 100%;
+min-width: 100%;
+min-height: 70px;
+height: 90px;
+padding-top: 2px;
+}
+.erasTitles{
+    text-align: center;
+    font-size:clamp(2rem, 5vw, 3.5rem) ;
+    margin-bottom: 0;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+.erasTitles{
+    text-align: center;
+    font-size:clamp(2rem, 3vw, 3.5rem) ;
+    margin-bottom: 0;
+}
+}
+
+#ruthTitle{
+font-size:clamp(1.8rem, 3vw, 2.2rem) ;
+text-wrap: wrap;
+}
+.starsCONT{
+display: flex;
+gap: 5px;
+border: solid 1px white;
+width: 100%;
+min-width: 100%;
+min-height: 200px;
+height: 200px;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+.starsCONT{
+height: 341px;
+}
+
+}
+.subImgs{
+    border: solid 2px white;
+    width: 50%;
+    min-height: 100%;
+    height: 70px ;
+    overflow: hidden;
+}
+.nameCONT{
+    display: flex;
+    gap: 5px;
+}
+.nameTitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:black;
+    color: white;
+    border: solid 2px white;
+    font-weight: bold;
+    width: 50%;
+    min-width: 50%;
+    min-height: 70px;
+    height: 90px;
+    text-align: center;
+    font-size:clamp(1.25rem,2.5vw, 2rem) ;
+}
+.dateTXT{
+    font-size:clamp(1.5rem,3vw, 2.5rem) ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.deskDateCONT{
+display: none;
+}
+/*-------------------CONTENT SECTION-----------*/
+nav{
+background:#d32f2f;
+color: white;
+}
+aside{
+background:rgb(169, 167, 164);
+}
+#rockIMG{
+width: 514px;
+    padding: 73px;
+    margin-top: -79px;
+    margin-left: -191px;
+}
+#stoneIMG{
+    width: 99%;
+    min-width: 181px;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+#rockIMG{
+        width: 786px;
+        padding: 73px;
+        margin-top: -87px;
+        margin-left: -138px;
+}
+#stoneIMG{
+    width: 99%;
+    min-width: 181px;
+}
+
+}
+
+section{
+
+}
+#batistaIMG{
+width: 229px;
+margin-left: -47px;
+margin-top: -21px;
+}
+#tripleIMG{
+
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+#batistaIMG {
+    width: 409px;
+    margin-left: 35px;
+    margin-top: -36px;
+}
+#tripleIMG{
+    width: 62%;
+    min-width: 310px;
+    margin-left: 90px;
+}
+}
+
+article{
+    background-color: blue;
+}
+#cenaIMG{
+ height: 196px;
+ margin-left: -76px;
+}
+#ortonIMG{
+    height: 196px;
+    margin-left: -99px;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+#cenaIMG{
+height: 339px;
+}
+#ortonIMG{
+  height: 343px;
+}
+
+}
+
+footer{
+background: #121212;
+color: white;
+width: 100%;
+min-width: 100%;
+min-height: 50px;
+height:50px;
+padding-top: 5px;
+clear: both;
+text-align: center;
+
+}
+/*--------CSS DESTOP  GRID SECTION----*
+/*----------DESK TOP---*/
+
+@media (min-width:1440px) {
+    main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    min-width: 50%;
+    min-height: 200px;
+    border: solid blue 2px;
+
+}
+.titleCONT{
+ grid-row:  1 ;
+grid-column: 1/4;   
+}
+nav{
+display: flex;
+justify-content: space-evenly;
+}
+aside{
+background: lightskyblue;
+grid-row:  2/4;
+grid-column: 1/2;
+}
+section{
+
+}
+article{
+    
+}
+/*---------GRID ERA TITLES----*/
+
+#attittude{
+grid-row:1;
+grid-column: 1/2;
+}
+#ruthTitle{
+padding-top: 10px;
+}
+/*---------desk date --*/
+.deskDateCONT{
+display: flex;
+justify-content: space-around;
+background-color: #d4af37;
+color: white;
+grid-column: 1/4;
+grid-row: 3;
+font-size: clamp(1.125rem, 2vw,2rem);
+}
+
+/*---------GRID IMGS-*/
+.starsCONT{
+grid-row: 4;
+}
+#rockIMG{
+width: 749px;
+padding: 73px;
+margin-top: -75px;
+margin-left: -253px;
+}
+/*-------------PG------*/
+#batistaIMG{
+width: 354px;
+margin-left: -39px;
+margin-top: -36px;
+}
+#tripleIMG{
+margin-left: 0;
+}
+#cenaIMG{
+height: 334px;
+margin-left: -151px;
+}
+#ortonIMG{
+height: 334px;
+margin-left: -200px;
+}
+.nameCONT {
+    grid-row: 5;
+}
+footer{
+grid-row:  8 ;
+grid-column: 1/4;
+font-size: clamp(1.125rem, 2vw,2rem);
+}
+}
